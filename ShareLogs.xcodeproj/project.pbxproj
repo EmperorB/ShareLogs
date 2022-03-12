@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A109DB6127DD07F2002BDB84 /* ShareCrashes.docc in Sources */ = {isa = PBXBuildFile; fileRef = A109DB6027DD07F2002BDB84 /* ShareCrashes.docc */; };
+		A109DB6727DD07F3002BDB84 /* ShareCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109DB5D27DD07F2002BDB84 /* ShareCrashes.framework */; };
+		A109DB6E27DD07F3002BDB84 /* ShareCrashesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109DB6D27DD07F3002BDB84 /* ShareCrashesTests.swift */; };
+		A109DB6F27DD07F3002BDB84 /* ShareCrashes.h in Headers */ = {isa = PBXBuildFile; fileRef = A109DB5F27DD07F2002BDB84 /* ShareCrashes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A109DB7227DD07F3002BDB84 /* ShareCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A109DB5D27DD07F2002BDB84 /* ShareCrashes.framework */; };
+		A109DB7427DD07F3002BDB84 /* ShareCrashes.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A109DB5D27DD07F2002BDB84 /* ShareCrashes.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A109DB7B27DD07FF002BDB84 /* CrashInformationInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B59DE27DCFD4E00BBA4E3 /* CrashInformationInterface.swift */; };
+		A109DB7C27DD0801002BDB84 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B59EB27DD006F00BBA4E3 /* CoreDataManager.swift */; };
+		A109DB7D27DD0805002BDB84 /* CoreDataManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19B59F027DD00A000BBA4E3 /* CoreDataManagerInterface.swift */; };
+		A109DB7E27DD081B002BDB84 /* CrashTrace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A19B59DB27DCFB2600BBA4E3 /* CrashTrace.xcdatamodeld */; };
+		A109DB8727DD0959002BDB84 /* ShareCrash.swift in Sources */ = {isa = PBXBuildFile; fileRef = A109DB8427DD0901002BDB84 /* ShareCrash.swift */; };
 		A1556C4127DB976A00EFF432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1556C4027DB976A00EFF432 /* AppDelegate.swift */; };
 		A1556C4327DB976A00EFF432 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1556C4227DB976A00EFF432 /* SceneDelegate.swift */; };
 		A1556C4527DB976A00EFF432 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1556C4427DB976A00EFF432 /* ViewController.swift */; };
@@ -15,7 +26,53 @@
 		A1556C4D27DB976C00EFF432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1556C4B27DB976C00EFF432 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A109DB6827DD07F3002BDB84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1556C3527DB976A00EFF432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A109DB5C27DD07F2002BDB84;
+			remoteInfo = ShareCrashes;
+		};
+		A109DB6A27DD07F3002BDB84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1556C3527DB976A00EFF432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1556C3C27DB976A00EFF432;
+			remoteInfo = ShareLogs;
+		};
+		A109DB7027DD07F3002BDB84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1556C3527DB976A00EFF432 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A109DB5C27DD07F2002BDB84;
+			remoteInfo = ShareCrashes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A109DB7327DD07F3002BDB84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A109DB7427DD07F3002BDB84 /* ShareCrashes.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A109DB5327DD05EF002BDB84 /* CrashInformation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrashInformation+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A109DB5427DD05EF002BDB84 /* CrashInformation+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CrashInformation+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A109DB5D27DD07F2002BDB84 /* ShareCrashes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ShareCrashes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A109DB5F27DD07F2002BDB84 /* ShareCrashes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShareCrashes.h; sourceTree = "<group>"; };
+		A109DB6027DD07F2002BDB84 /* ShareCrashes.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ShareCrashes.docc; sourceTree = "<group>"; };
+		A109DB6627DD07F3002BDB84 /* ShareCrashesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShareCrashesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A109DB6D27DD07F3002BDB84 /* ShareCrashesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCrashesTests.swift; sourceTree = "<group>"; };
+		A109DB8427DD0901002BDB84 /* ShareCrash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCrash.swift; sourceTree = "<group>"; };
 		A1556C3D27DB976A00EFF432 /* ShareLogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareLogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1556C4027DB976A00EFF432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1556C4227DB976A00EFF432 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,23 +81,71 @@
 		A1556C4927DB976C00EFF432 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1556C4C27DB976C00EFF432 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1556C4E27DB976C00EFF432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A19B59DC27DCFB2600BBA4E3 /* CrashTrace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CrashTrace.xcdatamodel; sourceTree = "<group>"; };
+		A19B59DE27DCFD4E00BBA4E3 /* CrashInformationInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashInformationInterface.swift; sourceTree = "<group>"; };
+		A19B59EB27DD006F00BBA4E3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A19B59F027DD00A000BBA4E3 /* CoreDataManagerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManagerInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A1556C3A27DB976A00EFF432 /* Frameworks */ = {
+		A109DB5A27DD07F2002BDB84 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A109DB6327DD07F3002BDB84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A109DB6727DD07F3002BDB84 /* ShareCrashes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1556C3A27DB976A00EFF432 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A109DB7227DD07F3002BDB84 /* ShareCrashes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A109DB5727DD0780002BDB84 /* CoreData Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A109DB5327DD05EF002BDB84 /* CrashInformation+CoreDataClass.swift */,
+				A109DB5427DD05EF002BDB84 /* CrashInformation+CoreDataProperties.swift */,
+			);
+			path = "CoreData Classes";
+			sourceTree = "<group>";
+		};
+		A109DB5E27DD07F2002BDB84 /* ShareCrashes */ = {
+			isa = PBXGroup;
+			children = (
+				A109DB5F27DD07F2002BDB84 /* ShareCrashes.h */,
+				A109DB6027DD07F2002BDB84 /* ShareCrashes.docc */,
+			);
+			path = ShareCrashes;
+			sourceTree = "<group>";
+		};
+		A109DB6C27DD07F3002BDB84 /* ShareCrashesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A109DB6D27DD07F3002BDB84 /* ShareCrashesTests.swift */,
+			);
+			path = ShareCrashesTests;
+			sourceTree = "<group>";
+		};
 		A1556C3427DB976A00EFF432 = {
 			isa = PBXGroup;
 			children = (
 				A1556C3F27DB976A00EFF432 /* ShareLogs */,
+				A109DB5E27DD07F2002BDB84 /* ShareCrashes */,
+				A109DB6C27DD07F3002BDB84 /* ShareCrashesTests */,
 				A1556C3E27DB976A00EFF432 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				A1556C3D27DB976A00EFF432 /* ShareLogs.app */,
+				A109DB5D27DD07F2002BDB84 /* ShareCrashes.framework */,
+				A109DB6627DD07F3002BDB84 /* ShareCrashesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,6 +164,9 @@
 			isa = PBXGroup;
 			children = (
 				A1556C4027DB976A00EFF432 /* AppDelegate.swift */,
+				A19B59DB27DCFB2600BBA4E3 /* CrashTrace.xcdatamodeld */,
+				A109DB8427DD0901002BDB84 /* ShareCrash.swift */,
+				A19B59E027DCFD5B00BBA4E3 /* Models */,
 				A1556C4227DB976A00EFF432 /* SceneDelegate.swift */,
 				A1556C4427DB976A00EFF432 /* ViewController.swift */,
 				A1556C4627DB976A00EFF432 /* Main.storyboard */,
@@ -67,9 +177,68 @@
 			path = ShareLogs;
 			sourceTree = "<group>";
 		};
+		A19B59E027DCFD5B00BBA4E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A109DB5727DD0780002BDB84 /* CoreData Classes */,
+				A19B59DE27DCFD4E00BBA4E3 /* CrashInformationInterface.swift */,
+				A19B59EB27DD006F00BBA4E3 /* CoreDataManager.swift */,
+				A19B59F027DD00A000BBA4E3 /* CoreDataManagerInterface.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A109DB5827DD07F2002BDB84 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A109DB6F27DD07F3002BDB84 /* ShareCrashes.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		A109DB5C27DD07F2002BDB84 /* ShareCrashes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A109DB7527DD07F3002BDB84 /* Build configuration list for PBXNativeTarget "ShareCrashes" */;
+			buildPhases = (
+				A109DB5827DD07F2002BDB84 /* Headers */,
+				A109DB5927DD07F2002BDB84 /* Sources */,
+				A109DB5A27DD07F2002BDB84 /* Frameworks */,
+				A109DB5B27DD07F2002BDB84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareCrashes;
+			productName = ShareCrashes;
+			productReference = A109DB5D27DD07F2002BDB84 /* ShareCrashes.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A109DB6527DD07F3002BDB84 /* ShareCrashesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A109DB7827DD07F3002BDB84 /* Build configuration list for PBXNativeTarget "ShareCrashesTests" */;
+			buildPhases = (
+				A109DB6227DD07F3002BDB84 /* Sources */,
+				A109DB6327DD07F3002BDB84 /* Frameworks */,
+				A109DB6427DD07F3002BDB84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A109DB6927DD07F3002BDB84 /* PBXTargetDependency */,
+				A109DB6B27DD07F3002BDB84 /* PBXTargetDependency */,
+			);
+			name = ShareCrashesTests;
+			productName = ShareCrashesTests;
+			productReference = A109DB6627DD07F3002BDB84 /* ShareCrashesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A1556C3C27DB976A00EFF432 /* ShareLogs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1556C5127DB976C00EFF432 /* Build configuration list for PBXNativeTarget "ShareLogs" */;
@@ -77,10 +246,12 @@
 				A1556C3927DB976A00EFF432 /* Sources */,
 				A1556C3A27DB976A00EFF432 /* Frameworks */,
 				A1556C3B27DB976A00EFF432 /* Resources */,
+				A109DB7327DD07F3002BDB84 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A109DB7127DD07F3002BDB84 /* PBXTargetDependency */,
 			);
 			name = ShareLogs;
 			productName = ShareLogs;
@@ -97,6 +268,13 @@
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
+					A109DB5C27DD07F2002BDB84 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					A109DB6527DD07F3002BDB84 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = A1556C3C27DB976A00EFF432;
+					};
 					A1556C3C27DB976A00EFF432 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -116,11 +294,27 @@
 			projectRoot = "";
 			targets = (
 				A1556C3C27DB976A00EFF432 /* ShareLogs */,
+				A109DB5C27DD07F2002BDB84 /* ShareCrashes */,
+				A109DB6527DD07F3002BDB84 /* ShareCrashesTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A109DB5B27DD07F2002BDB84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A109DB6427DD07F3002BDB84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1556C3B27DB976A00EFF432 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +328,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A109DB5927DD07F2002BDB84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A109DB7D27DD0805002BDB84 /* CoreDataManagerInterface.swift in Sources */,
+				A109DB8727DD0959002BDB84 /* ShareCrash.swift in Sources */,
+				A109DB7E27DD081B002BDB84 /* CrashTrace.xcdatamodeld in Sources */,
+				A109DB7C27DD0801002BDB84 /* CoreDataManager.swift in Sources */,
+				A109DB7B27DD07FF002BDB84 /* CrashInformationInterface.swift in Sources */,
+				A109DB6127DD07F2002BDB84 /* ShareCrashes.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A109DB6227DD07F3002BDB84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A109DB6E27DD07F3002BDB84 /* ShareCrashesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1556C3927DB976A00EFF432 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -145,6 +360,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A109DB6927DD07F3002BDB84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A109DB5C27DD07F2002BDB84 /* ShareCrashes */;
+			targetProxy = A109DB6827DD07F3002BDB84 /* PBXContainerItemProxy */;
+		};
+		A109DB6B27DD07F3002BDB84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1556C3C27DB976A00EFF432 /* ShareLogs */;
+			targetProxy = A109DB6A27DD07F3002BDB84 /* PBXContainerItemProxy */;
+		};
+		A109DB7127DD07F3002BDB84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A109DB5C27DD07F2002BDB84 /* ShareCrashes */;
+			targetProxy = A109DB7027DD07F3002BDB84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A1556C4627DB976A00EFF432 /* Main.storyboard */ = {
@@ -166,6 +399,112 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A109DB7627DD07F3002BDB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HV6R8Z2VHR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budhirajaRajesh.ShareCrashes;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A109DB7727DD07F3002BDB84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HV6R8Z2VHR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budhirajaRajesh.ShareCrashes;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A109DB7927DD07F3002BDB84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV6R8Z2VHR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budhirajaRajesh.ShareCrashesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareLogs.app/ShareLogs";
+			};
+			name = Debug;
+		};
+		A109DB7A27DD07F3002BDB84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HV6R8Z2VHR;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.budhirajaRajesh.ShareCrashesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShareLogs.app/ShareLogs";
+			};
+			name = Release;
+		};
 		A1556C4F27DB976C00EFF432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -285,6 +624,7 @@
 		A1556C5227DB976C00EFF432 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -313,6 +653,7 @@
 		A1556C5327DB976C00EFF432 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -341,6 +682,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A109DB7527DD07F3002BDB84 /* Build configuration list for PBXNativeTarget "ShareCrashes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A109DB7627DD07F3002BDB84 /* Debug */,
+				A109DB7727DD07F3002BDB84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A109DB7827DD07F3002BDB84 /* Build configuration list for PBXNativeTarget "ShareCrashesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A109DB7927DD07F3002BDB84 /* Debug */,
+				A109DB7A27DD07F3002BDB84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1556C3827DB976A00EFF432 /* Build configuration list for PBXProject "ShareLogs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -360,6 +719,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A19B59DB27DCFB2600BBA4E3 /* CrashTrace.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A19B59DC27DCFB2600BBA4E3 /* CrashTrace.xcdatamodel */,
+			);
+			currentVersion = A19B59DC27DCFB2600BBA4E3 /* CrashTrace.xcdatamodel */;
+			path = CrashTrace.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A1556C3527DB976A00EFF432 /* Project object */;
 }
