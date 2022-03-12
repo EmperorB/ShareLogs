@@ -39,6 +39,7 @@ final class CoreDataManager: CoreDataManagerInterface {
     
     func fetchAllCrashes() -> [CrashInformationInterface] {
         let request: NSFetchRequest<CrashInformation> = CrashInformation.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(key: "date", ascending: false)]
         let crashes: [CrashInformation]? = try? persistentContainer.viewContext.fetch(request)
         let crashesArray = crashes ?? []
         var array: [CrashInformationInterface] = []

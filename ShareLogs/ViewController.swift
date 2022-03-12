@@ -10,18 +10,25 @@ import ShareCrashes
 
 class ViewController: UIViewController {
     
-    let existingCrashes = ShareCrash.shared.fetchCrashes()
-    let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
+    private let existingCrashes = ShareCrash.shared.fetchCrashes()
+    private let tableView: UITableView = UITableView(frame: .zero, style: .grouped)
         
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
     
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "hh:mm dd-MMM-YYYY"
+        return formatter
+    }()
+    
     private func setupView() {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(DescriptionTableViewCell.self, forCellReuseIdentifier: "cell")
         self.view.addSubview(tableView)
         self.view.topAnchor.constraint(equalTo: tableView.topAnchor).isActive = true
         self.view.bottomAnchor.constraint(equalTo: tableView.bottomAnchor).isActive = true
@@ -41,11 +48,53 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = .init(frame: .zero)
-        cell.textLabel?.text = existingCrashes[indexPath.section].stackTrace
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as? DescriptionTableViewCell else {
+            return UITableViewCell()
+        }
+        let date = existingCrashes[indexPath.section].date ?? Date()
+        cell.date.text = dateFormatter.string(from: date)
+        cell.stack.text = existingCrashes[indexPath.section].stackTrace
         return cell
     }
-    
-    
 }
 
+class DescriptionTableViewCell: UITableViewCell {
+
+    let date: UILabel = {
+        let label = UILabel()
+        label.text = "Date"
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+
+    let stack: UILabel = {
+        let label = UILabel()
+        label.text = "Stack"
+        label.font = UIFont.systemFont(ofSize: 14)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        createView()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func createView() {
+        self.contentView.addSubview(date)
+        self.contentView.addSubview(stack)
+        date.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8).isActive = true
+        date.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8).isActive = true
+        date.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 8).isActive = true
+        date.bottomAnchor.constraint(equalTo: stack.topAnchor,  constant: -8).isActive = true
+        stack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8).isActive = true
+        stack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 8).isActive = true
+        stack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8).isActive = true
+    }
+}
