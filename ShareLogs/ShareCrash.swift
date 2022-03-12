@@ -9,7 +9,8 @@ import Foundation
 
 typealias ClosureType = ((Int32) -> Void)
 
-public final class ShareCrash {
+@objcMembers
+public final class ShareCrash: NSObject {
 
     public static let shared = ShareCrash()
     private var closuresArray: [ClosureType] = []
@@ -25,7 +26,8 @@ public final class ShareCrash {
         coreDataManager.addNewCrash(crash)
     }
         
-    private init() {
+    private override init() {
+        super.init()
         for each in signalType {
             if let signalCapture = signal(each, { s in
                 let crash = Crash(.init(), Thread.callStackSymbols.joined(separator: "\n"))
